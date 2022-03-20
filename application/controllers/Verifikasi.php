@@ -53,13 +53,11 @@ class Verifikasi extends CI_Controller
                 $this->db->update('order', $data);
                 redirect(base_url() . 'thanks?t=' . $t);
             } else {
-                redirect(base_url('verifikasi'));
-                echo "Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'Something went wrong!',
-                    footer: '<a href=''>Why do I have this issue?</a>'
-                  })";
+                echo '<script type="text/javascript">';
+				echo 'alert("Kode OTP salah");';
+				echo 'window.location.href = "http://localhost:8080/barokah/verifikasi";';
+				echo '</script>';
+                die();
             }
         } else {
             redirect(base_url());
