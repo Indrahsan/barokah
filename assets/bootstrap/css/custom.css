@@ -1,0 +1,335 @@
+.navbar {
+    background-image: url(../../images/00.png) !important;
+    color: #FCBA1E !important;
+    /* border-bottom: 1px solid #FCBA1E;
+    box-shadow: 0px 0px 10px 10px rgba(49, 49, 49, 0.5); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    background: url(../../images/background.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* body {
+  background-image: url(../../images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+button.btn.btn-primary {
+    color: #E50914;
+    background-color: #FCBA1E;
+    border-color: #FCBA1E;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.navbar-bar a {
+    font-family: 'Chewy', cursive;
+    font-size: 50px;
+    position: fixed;
+}
+
+img.img1 {
+    width: 450px;
+    height: 250px;
+    margin-top: 95px;
+}
+
+p.sec1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+p.sec2 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-top: 20px;
+}
+
+.navbar-nav {
+    font-family: 'Chewy', cursive;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33px;
+}
+
+a.nav-item.nav-link {
+    color: white !important;
+    margin-left: 100px;
+    align-items: center;
+}
+
+a.nav-item.nav-link:hover {
+    color: #FCBA1E !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 15px !important;
+    height: 15px !important;
+    background-color: #fccb06 !important;
+    border-radius: 100%;
+    margin-right: 5px !important;
+    margin-left: 5px !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("../../images/next.png") !important;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("../../images/prev.png") !important;
+}
+
+img.carous {
+    width: 500px;
+    height: 400px;
+    margin-top: 70px;
+}
+
+.foot {
+    color: white;
+}
+
+.footup {
+    color: white;
+    text-decoration: none;
+}
+
+.footup:hover {
+    color: #E50914;
+}
+
+.tombol {
+    width: 150px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #fccb06 !important;
+    background-color: #E50914 !important;
+    border: 0px;
+    margin-top: 20px;
+}
+
+.foot span a {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 100px;
+}
+
+.foot span a span {
+    margin-top: 100px;
+}
+
+.garis {
+    border-bottom: 1px solid white;
+}
+
+div.d-flex.justify-content-center.footer {
+    background-image: url(../../images/footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75px;
+}
+
+a.kaki {
+    margin-top: 25px;
+}
+
+img.kaki {
+    width: 40px;
+    height: 40px;
+}
+
+p.sec3 {
+    font-family: 'Chewy', cursive;
+    font-size: 50px;
+    color: #fccb06;
+    margin-top: 20px;
+}
+
+p.secakhir {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #fccb06;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+p.seccontact {
+    font-family: 'Montserrat', sans-serif;
+    color: #fccb06;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input.contact[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input.contact[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input.contact[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input.contact[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type=int] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input.contact[type=int] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+textarea.contact {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.container form {
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    background-image: url(../..//images/23.png) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%
+}
+
+.geserdikit {
+    margin-left: 70px;
+}
+
+.container form.kotak {
+    outline: none !important;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.container form.kotakotp {
+    outline: none !important;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 410px;
+    margin-top: 100px;
+}
+
+.vl {
+    height: 620px;
+    margin-left: 15px;
+}
+
+.vl img {
+    width: 300px;
+    height: 400px;
+}
+
+.rad:hover>img {
+    /* HOVER <i> STYLE */
+    box-shadow: inset 0 0 0 3px #fff;
+}
