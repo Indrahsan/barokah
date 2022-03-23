@@ -49,6 +49,7 @@ class Form extends CI_Controller
 			$metode_bayar	= $this->input->post('mtd_bayar', true);
 			$otp = rand(1000, 9999);
 			$status = 0;
+			$jml_harga = 15000 * $jml;
 
 			if ($jml < 50) {
 				echo "<script type='text/javascript'>alert('pesanan kurang dari ketentuan');</script>";
@@ -64,6 +65,7 @@ class Form extends CI_Controller
 						'nama'					=>		$nama,
 						'no_telepon'			=>		$telp,
 						'email'					=>		$email,
+						'jml_harga'				=>		$jml_harga,
 						'paket'					=> 		$paket,
 						'tgl_pengiriman'		=>		$tgl_pengiriman,
 						'jml_pesanan'			=>		$jml,
