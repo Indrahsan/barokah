@@ -44,7 +44,7 @@
                             <input class="form-control" type="file" name="gambar" onchange="document.getElementById('nama_banner_mob').value = this.value.split('\\').pop().split('/').pop()" accept="image/png, image/jpeg, image/jpg">
                         </button>
                         <div class="d-flex justify-content-end">
-                            <button type="button" id="menu" class="btn btn-primary tombol">Submit</button>
+                            <button type="submit" class="btn btn-primary tombol">Submit</button>
                         </div>
                 </form>
 

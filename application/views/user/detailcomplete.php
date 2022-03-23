@@ -139,7 +139,7 @@
                         </div>
                         <h4 class="card-title">Bukti Transfer</h4>
                         <div class="card-content">
-                        <img width="100px" src="<?= base_url() ?>assets/images/<?=$row ['gambar']?>">
+                        <img width="100px" src="<?= base_url() ?>assets/img/<?=$row ['gambar']?>">
                         </div>
                     </div>
                 </div>

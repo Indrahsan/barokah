@@ -685,7 +685,7 @@ class Dashboard extends CI_Controller
                     'smtp_host' => 'ssl://smtp.googlemail.com',
                     'smtp_port' => 465,
                     'smtp_user' => 'barokahcatering314@gmail.com',
-                    'smtp_pass' => 'indrahasan23',
+                    'smtp_pass' => 'ericcant0na7',
                     'mailtype' => 'html',
                     'charset' => 'iso-8859-1',
                     'newline'   => "\r\n"

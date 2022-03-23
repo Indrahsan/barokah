@@ -7,6 +7,7 @@ class Thanks extends CI_Controller
     {
 
         $data["t"] = $this->input->get('t', true);
+        $t = $this->input->get('t', true);
 
         if (isset($data["t"])) {
             $this->db->where('t', $data['t']);
@@ -17,10 +18,16 @@ class Thanks extends CI_Controller
             } else {
                 $data['getAllData'] = $this->db->get_where('order', ['t' => $data['t']])->row_array();
 
-                if (empty($_FILES['gambar']['name']))
-                {
-                    $this->form_validation->set_rules('gambar', 'Image', 'required');
-                }
+                $this->form_validation->set_rules('gambar', 'File', 'trim|xss_clean');
+
+                
+
+                // $gambar = $_FILES['gambar'];
+                // var_dump($gambar);
+
+                // var_dump($this->form_validation->run());
+                // die();
+
 
                 if ($this->form_validation->run() == false) {
 
@@ -29,6 +36,7 @@ class Thanks extends CI_Controller
                     $data['isi'] = $this->load->view('thanks_view', $data, true);
                     $this->load->view('main_view', $data);
                 } else {
+
                     $gambar = $_FILES['gambar'];
 
 
@@ -41,24 +49,24 @@ class Thanks extends CI_Controller
                         $this->upload->initialize($config);
 
                         if (!$this->upload->do_upload('gambar')) {
-                            echo '<script type="text/javascript">';
-                            echo 'alert("Perikasa gambar yang diupload");';
-                            echo 'window.location.href = "http://localhost:8080/barokah/";';
-                            echo '</script>';
+                            $err = $this->upload->display_errors();
+                    echo $err;
+                    die();
                             die();
                         } else {
                             $gambar = $this->upload->data('file_name');
                         }
 
                         $data = array(
-                            'gambar'      =>  $gambar,
-                            'status'      => 2
+                            'status'      => 2,
+                            'gambar'      => $gambar
+                            
                         );
 
-                        $this->db->where('t', $data['t']);
-                        $this->db->insert('order', $data);
+                        $this->db->where('t', $t);
+                        $this->db->update('order', $data);
                         echo '<script type="text/javascript">';
-                        echo 'alert("Pesanan Sedang di proses");';
+                        echo 'alert("Sukses Upload! Pesanan sedang dalam proses");';
                         echo 'window.location.href = "http://localhost:8080/barokah/";';
                         echo '</script>';
                     }
@@ -68,4 +76,18 @@ class Thanks extends CI_Controller
             redirect(base_url());
         }
     }
+
+    public function file_check($str)
+        {
+                if ($str)
+                {
+                    return TRUE;
+                }
+                else
+                {
+
+                        $this->form_validation->set_message('file_check', 'isi dlu cok');
+                        return FALSE;
+                }
+        }
 }
